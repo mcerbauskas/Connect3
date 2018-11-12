@@ -6,9 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/playAgainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/winnerMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/playAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="playAgain"
+            android:text="Žaisti dar kartą!" />
+    </LinearLayout>
+
     <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/GridLayout1"
+        android:id="@+id/gridLayout"
         android:layout_width="0dp"
         android:layout_height="360dp"
         android:layout_marginBottom="44dp"
@@ -45,7 +70,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:onClick="dropIn"
-            android:tag="1"/>
+            android:tag="1" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -58,7 +83,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
             android:onClick="dropIn"
-            android:tag="2"/>
+            android:tag="2" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -71,7 +96,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:onClick="dropIn"
-            android:tag="3"/>
+            android:tag="3" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -82,7 +107,7 @@
             android:layout_marginLeft="36dp"
             android:layout_marginTop="26dp"
             android:onClick="dropIn"
-            android:tag="4"/>
+            android:tag="4" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -93,7 +118,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="26dp"
             android:onClick="dropIn"
-            android:tag="5"/>
+            android:tag="5" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -104,7 +129,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:onClick="dropIn"
-            android:tag="6"/>
+            android:tag="6" />
 
         <ImageView
             android:id="@+id/imageView8"
@@ -115,7 +140,7 @@
             android:layout_marginLeft="36dp"
             android:layout_marginTop="20dp"
             android:onClick="dropIn"
-            android:tag="7"/>
+            android:tag="7" />
 
         <ImageView
             android:id="@+id/imageView9"
@@ -126,7 +151,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:onClick="dropIn"
-            android:tag="8"/>
+            android:tag="8" />
     </GridLayout>
 
 </android.support.constraint.ConstraintLayout>
